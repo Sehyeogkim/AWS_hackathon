@@ -1,0 +1,724 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14",
+  "source": {
+    "type": "linkedin_profile",
+    "url": "https://www.linkedin.com/in/sehyeog-kim-5a1131265/",
+    "sections_used": [
+      "headline",
+      "about",
+      "experience",
+      "education",
+      "skills"
+    ],
+    "extraction_method": "browser_read_with_semantic_normalization",
+    "limitations": [
+      "This graph represents claims visible on the LinkedIn profile, not independently verified expertise.",
+      "Edges are created only when the profile explicitly links concepts in the same workflow, role, or tool category.",
+      "Confidence measures extraction support, not skill proficiency."
+    ]
+  },
+  "person": {
+    "id": "person_sehyeog_jeff_kim",
+    "name": "Sehyeog (Jeff) Kim",
+    "headline": "Computational Biomechanics",
+    "location": "San Francisco Bay Area",
+    "affiliations": [
+      {
+        "name": "Korea Advanced Institute of Science and Technology",
+        "relationship": "education",
+        "period": "Sep 2024 - Sep 2026"
+      },
+      {
+        "name": "HD Hyundai",
+        "relationship": "past_experience",
+        "period": "Dec 2023 - Feb 2024"
+      }
+    ],
+    "knowledge_status": "claimed"
+  },
+  "nodes": [
+    {
+      "id": "domain_mechanical_engineering",
+      "label": "Mechanical Engineering",
+      "type": "domain",
+      "cluster": "engineering",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_identity", "ev_education_kaist", "ev_education_skku"]
+    },
+    {
+      "id": "domain_computational_biomechanics",
+      "label": "Computational Biomechanics",
+      "type": "domain",
+      "cluster": "biomechanics",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_identity", "ev_education_kaist"]
+    },
+    {
+      "id": "domain_coronary_artery_biomechanics",
+      "label": "Coronary Artery Biomechanics",
+      "type": "domain",
+      "cluster": "biomechanics",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research", "ev_education_kaist"]
+    },
+    {
+      "id": "method_fsi",
+      "label": "Fluid-Structure Interaction (FSI)",
+      "type": "method",
+      "cluster": "simulation",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_research", "ev_about_tools", "ev_skills_top"]
+    },
+    {
+      "id": "method_cfd",
+      "label": "Computational Fluid Dynamics (CFD)",
+      "type": "method",
+      "cluster": "simulation",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_tools", "ev_skills_top", "ev_education_skku"]
+    },
+    {
+      "id": "method_fea",
+      "label": "Finite Element Analysis (FEA)",
+      "type": "method",
+      "cluster": "simulation",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_tools", "ev_education_kaist"]
+    },
+    {
+      "id": "method_ct_segmentation",
+      "label": "CT Image Segmentation",
+      "type": "method",
+      "cluster": "simulation_pipeline",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "id": "method_cad_modeling",
+      "label": "CAD Modeling",
+      "type": "method",
+      "cluster": "simulation_pipeline",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_research", "ev_about_tools", "ev_skills_all"]
+    },
+    {
+      "id": "method_meshing",
+      "label": "Computational Meshing",
+      "type": "method",
+      "cluster": "simulation_pipeline",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_research", "ev_about_tools"]
+    },
+    {
+      "id": "method_3d_fsi",
+      "label": "3D FSI Simulation",
+      "type": "method",
+      "cluster": "simulation_pipeline",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "id": "method_1d_pulsatile_flow",
+      "label": "1D Pulsatile Flow Simulation",
+      "type": "method",
+      "cluster": "simulation_pipeline",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "id": "method_solid_mechanics",
+      "label": "3D Solid Mechanics",
+      "type": "method",
+      "cluster": "simulation",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_education_kaist"]
+    },
+    {
+      "id": "method_stress_analysis",
+      "label": "Stress Distribution Analysis",
+      "type": "method",
+      "cluster": "biomechanics",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_education_kaist"]
+    },
+    {
+      "id": "workflow_simulation_automation",
+      "label": "Simulation Pipeline Automation",
+      "type": "workflow",
+      "cluster": "agentic_ai",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_agentic_ai"]
+    },
+    {
+      "id": "workflow_mesh_independence",
+      "label": "Mesh-Independence Studies",
+      "type": "workflow",
+      "cluster": "simulation_pipeline",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_ai"]
+    },
+    {
+      "id": "method_agentic_workflows",
+      "label": "Loop-Based Agentic Workflows",
+      "type": "method",
+      "cluster": "agentic_ai",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_ai"]
+    },
+    {
+      "id": "language_python",
+      "label": "Python",
+      "type": "programming_language",
+      "cluster": "software",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_programming", "ev_education_kaist", "ev_skills_education"]
+    },
+    {
+      "id": "language_cpp",
+      "label": "C++",
+      "type": "programming_language",
+      "cluster": "software",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_programming", "ev_skills_all"]
+    },
+    {
+      "id": "tool_ansys",
+      "label": "ANSYS / PyMAPDL",
+      "type": "tool",
+      "cluster": "simulation_tools",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_tools", "ev_education_kaist", "ev_skills_top"]
+    },
+    {
+      "id": "tool_openfoam",
+      "label": "OpenFOAM",
+      "type": "tool",
+      "cluster": "simulation_tools",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "id": "tool_fenics",
+      "label": "FEniCS",
+      "type": "tool",
+      "cluster": "simulation_tools",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "id": "tool_simvascular",
+      "label": "SimVascular",
+      "type": "tool",
+      "cluster": "simulation_tools",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_tools", "ev_skills_top"]
+    },
+    {
+      "id": "tool_svfsi",
+      "label": "svFSI",
+      "type": "tool",
+      "cluster": "simulation_tools",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_skills_all"]
+    },
+    {
+      "id": "tool_simmetrix",
+      "label": "Simmetrix",
+      "type": "tool",
+      "cluster": "meshing_tools",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "id": "tool_gmsh",
+      "label": "GMSH",
+      "type": "tool",
+      "cluster": "meshing_tools",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "id": "tool_spaceclaim",
+      "label": "SpaceClaim",
+      "type": "tool",
+      "cluster": "cad_tools",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "id": "tool_autodesk_inventor",
+      "label": "Autodesk Inventor",
+      "type": "tool",
+      "cluster": "cad_tools",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_about_tools", "ev_skills_all"]
+    },
+    {
+      "id": "tool_fusion_360",
+      "label": "Autodesk Fusion 360",
+      "type": "tool",
+      "cluster": "cad_tools",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "id": "tool_n8n",
+      "label": "n8n",
+      "type": "tool",
+      "cluster": "agentic_ai_tools",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "id": "tool_claude_code",
+      "label": "Claude Code",
+      "type": "tool",
+      "cluster": "agentic_ai_tools",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "id": "tool_codex",
+      "label": "Codex",
+      "type": "tool",
+      "cluster": "agentic_ai_tools",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "id": "tool_cursor",
+      "label": "Cursor",
+      "type": "tool",
+      "cluster": "agentic_ai_tools",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "id": "tool_gemini_cli",
+      "label": "Gemini CLI",
+      "type": "tool",
+      "cluster": "agentic_ai_tools",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "id": "tool_claude_agent_sdk",
+      "label": "Claude Agent SDK",
+      "type": "tool",
+      "cluster": "agentic_ai_tools",
+      "status": "claimed",
+      "confidence": 1.0,
+      "evidence_ids": ["ev_skills_top", "ev_skills_all"]
+    },
+    {
+      "id": "domain_liquid_fuel_supply_systems",
+      "label": "Liquid Fuel Supply Systems (LFSS)",
+      "type": "domain",
+      "cluster": "systems_engineering",
+      "status": "claimed",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "id": "skill_technical_requirements_analysis",
+      "label": "Technical Requirements Analysis",
+      "type": "skill",
+      "cluster": "systems_engineering",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "id": "skill_customer_specific_system_design",
+      "label": "Customer-Specific System Design",
+      "type": "skill",
+      "cluster": "systems_engineering",
+      "status": "claimed",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "id": "skill_cost_quotation",
+      "label": "Technical Cost Quotation",
+      "type": "skill",
+      "cluster": "systems_engineering",
+      "status": "claimed",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    }
+  ],
+  "edges": [
+    {
+      "source": "domain_computational_biomechanics",
+      "target": "domain_coronary_artery_biomechanics",
+      "type": "SPECIALIZES_IN",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "source": "method_fsi",
+      "target": "domain_coronary_artery_biomechanics",
+      "type": "APPLIED_TO",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "source": "method_cfd",
+      "target": "method_fsi",
+      "type": "CONTRIBUTES_TO",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_research", "ev_about_tools"]
+    },
+    {
+      "source": "method_fea",
+      "target": "method_fsi",
+      "type": "CONTRIBUTES_TO",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "method_ct_segmentation",
+      "target": "method_cad_modeling",
+      "type": "PRECEDES",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "source": "method_cad_modeling",
+      "target": "method_meshing",
+      "type": "PRECEDES",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "source": "method_meshing",
+      "target": "method_3d_fsi",
+      "type": "PRECEDES",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "source": "method_3d_fsi",
+      "target": "method_1d_pulsatile_flow",
+      "type": "COMPLEMENTED_BY",
+      "confidence": 0.85,
+      "evidence_ids": ["ev_about_research"]
+    },
+    {
+      "source": "method_stress_analysis",
+      "target": "domain_coronary_artery_biomechanics",
+      "type": "APPLIED_TO",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_education_kaist"]
+    },
+    {
+      "source": "method_solid_mechanics",
+      "target": "method_stress_analysis",
+      "type": "SUPPORTS",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_education_kaist"]
+    },
+    {
+      "source": "tool_ansys",
+      "target": "method_fsi",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_ansys",
+      "target": "method_meshing",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_ansys",
+      "target": "method_solid_mechanics",
+      "type": "USED_FOR",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_education_kaist"]
+    },
+    {
+      "source": "tool_openfoam",
+      "target": "method_cfd",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_fenics",
+      "target": "method_fea",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_simvascular",
+      "target": "method_fsi",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools", "ev_skills_top"]
+    },
+    {
+      "source": "tool_svfsi",
+      "target": "method_fsi",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_skills_all"]
+    },
+    {
+      "source": "tool_simmetrix",
+      "target": "method_meshing",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_gmsh",
+      "target": "method_meshing",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_spaceclaim",
+      "target": "method_cad_modeling",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools"]
+    },
+    {
+      "source": "tool_autodesk_inventor",
+      "target": "method_cad_modeling",
+      "type": "USED_FOR",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_about_tools", "ev_skills_all"]
+    },
+    {
+      "source": "method_agentic_workflows",
+      "target": "workflow_simulation_automation",
+      "type": "ENABLES",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_agentic_ai"]
+    },
+    {
+      "source": "workflow_simulation_automation",
+      "target": "workflow_mesh_independence",
+      "type": "AUTOMATES",
+      "confidence": 0.98,
+      "evidence_ids": ["ev_about_agentic_ai"]
+    },
+    {
+      "source": "tool_n8n",
+      "target": "method_agentic_workflows",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "source": "tool_claude_code",
+      "target": "method_agentic_workflows",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "source": "tool_codex",
+      "target": "method_agentic_workflows",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "source": "tool_cursor",
+      "target": "method_agentic_workflows",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "source": "tool_gemini_cli",
+      "target": "method_agentic_workflows",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_about_agentic_tools"]
+    },
+    {
+      "source": "skill_technical_requirements_analysis",
+      "target": "skill_customer_specific_system_design",
+      "type": "INFORMS",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "source": "skill_customer_specific_system_design",
+      "target": "domain_liquid_fuel_supply_systems",
+      "type": "APPLIED_TO",
+      "confidence": 0.95,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "source": "skill_cost_quotation",
+      "target": "skill_technical_requirements_analysis",
+      "type": "BASED_ON",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    },
+    {
+      "source": "tool_fusion_360",
+      "target": "skill_customer_specific_system_design",
+      "type": "USED_FOR",
+      "confidence": 0.9,
+      "evidence_ids": ["ev_experience_hd_hyundai"]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev_about_identity",
+      "section": "about",
+      "excerpt": "Mechanical engineer specializing in computational biomechanics, with an M.S. from the Computational Mechanics and Biomechanics Lab at KAIST."
+    },
+    {
+      "id": "ev_about_research",
+      "section": "about",
+      "excerpt": "FSI simulation of coronary arteries from patient CT data, spanning segmentation, CAD modeling, meshing, 3D FSI, and 1D pulsatile flow simulation."
+    },
+    {
+      "id": "ev_about_tools",
+      "section": "about",
+      "excerpt": "FSI / CFD / FEA: ANSYS, OpenFOAM, FEniCS, SimVascular; Meshing: ANSYS, Simmetrix, GMSH; CAD: SpaceClaim, Autodesk Inventor."
+    },
+    {
+      "id": "ev_about_programming",
+      "section": "about",
+      "excerpt": "Programming: Python, C++."
+    },
+    {
+      "id": "ev_about_agentic_tools",
+      "section": "about",
+      "excerpt": "Building at the intersection of simulation and Agentic AI using n8n, Claude Code, Codex, Cursor, and Gemini CLI."
+    },
+    {
+      "id": "ev_about_agentic_ai",
+      "section": "about",
+      "excerpt": "Applied loop-based agentic workflows to automate mesh-independence studies and end-to-end simulation runs."
+    },
+    {
+      "id": "ev_skills_top",
+      "section": "top_skills",
+      "excerpt": "Computational Fluid Dynamics, FSI simulation, Ansys Products, SimVascular, Claude Agent SDK."
+    },
+    {
+      "id": "ev_skills_all",
+      "section": "skills",
+      "excerpt": "svFSI, Autodesk Inventor, Ansys Products, Claude Agent SDK, CFD, FSI simulation, SimVascular, CAD, and C++."
+    },
+    {
+      "id": "ev_experience_hd_hyundai",
+      "section": "experience",
+      "excerpt": "Designed customer-specific liquid fuel supply systems, assessed technical requirements, and prepared cost quotations using Autodesk Fusion 360."
+    },
+    {
+      "id": "ev_education_kaist",
+      "section": "education",
+      "excerpt": "Conducts 3D/1D fluid simulations with in-house FEM code and 3D solid mechanics using PyMAPDL, focused on coronary artery stress distribution."
+    },
+    {
+      "id": "ev_education_skku",
+      "section": "education",
+      "excerpt": "Mechanical Engineering studies focused on fluid and thermal sciences, including fluid mechanics, heat transfer, computational thermal-fluid dynamics, and microfluidics."
+    },
+    {
+      "id": "ev_skills_education",
+      "section": "education_skills",
+      "excerpt": "Python and Computer-Aided Design are associated with multiple educational experiences."
+    }
+  ],
+  "summary": {
+    "primary_clusters": [
+      {
+        "name": "Computational Biomechanics",
+        "node_ids": [
+          "domain_computational_biomechanics",
+          "domain_coronary_artery_biomechanics",
+          "method_fsi",
+          "method_cfd",
+          "method_fea",
+          "method_stress_analysis"
+        ]
+      },
+      {
+        "name": "End-to-End Simulation Pipeline",
+        "node_ids": [
+          "method_ct_segmentation",
+          "method_cad_modeling",
+          "method_meshing",
+          "method_3d_fsi",
+          "method_1d_pulsatile_flow"
+        ]
+      },
+      {
+        "name": "Simulation Automation and Agentic AI",
+        "node_ids": [
+          "method_agentic_workflows",
+          "workflow_simulation_automation",
+          "workflow_mesh_independence",
+          "tool_n8n",
+          "tool_claude_code",
+          "tool_codex",
+          "tool_cursor",
+          "tool_gemini_cli",
+          "tool_claude_agent_sdk"
+        ]
+      },
+      {
+        "name": "Systems Engineering",
+        "node_ids": [
+          "domain_liquid_fuel_supply_systems",
+          "skill_technical_requirements_analysis",
+          "skill_customer_specific_system_design",
+          "skill_cost_quotation",
+          "tool_fusion_360"
+        ]
+      }
+    ],
+    "node_count": 38,
+    "edge_count": 32,
+    "default_verification_status": "claimed"
+  }
+}

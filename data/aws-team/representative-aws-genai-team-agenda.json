@@ -1,0 +1,220 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:50:17Z",
+  "team": {
+    "display_name": "Representative AWS GenAI Team",
+    "public_description": "A representative AWS GenAI team synthesized from publicly available professional profiles.",
+    "member_count": 6,
+    "is_actual_aws_org_team": false,
+    "agenda_is_official_aws_plan": false,
+    "limitations": [
+      "The members are a research sample assembled from public professional evidence and are not asserted to share a reporting line, department, or project.",
+      "The agenda is an evidence-grounded synthesis of their public technical work, not an AWS-authored roadmap.",
+      "Real names and public URLs are retained only for provenance; the demo should display aliases AWS Engineer A-F.",
+      "All individual knowledge remains claimed until separately verified through a job-relevant interview or authorized work sample."
+    ]
+  },
+  "agenda": {
+    "north_star": "Build a production-grade enterprise generative and agentic AI platform on AWS that is grounded in authorized enterprise knowledge, coordinates specialized agents, and embeds identity, governance, evaluation, observability, and resilience by design.",
+    "short_demo_label": "Secure, grounded, observable, and resilient Agentic AI on Amazon Bedrock",
+    "workstreams": [
+      {
+        "id": "ws_enterprise_knowledge",
+        "name": "Enterprise Knowledge and Retrieval",
+        "objective": "Ground agents and generative AI applications in current enterprise data with scalable retrieval and explicit document access control.",
+        "deliverables": [
+          "Managed and custom RAG patterns using Amazon Bedrock Knowledge Bases",
+          "Multimodal ingestion and retrieval",
+          "Metadata filtering and real-time ACL enforcement",
+          "Retrieval traces and CloudWatch observability"
+        ],
+        "primary_member_aliases": [
+          "AWS Engineer A"
+        ],
+        "supporting_member_aliases": [
+          "AWS Engineer B",
+          "AWS Engineer C"
+        ],
+        "evidence_basis": [
+          "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/"
+        ]
+      },
+      {
+        "id": "ws_genai_platform",
+        "name": "GenAI Platform Engineering",
+        "objective": "Provide a repeatable platform for deploying and governing models, prompts, tools, agents, and application workloads across environments.",
+        "deliverables": [
+          "AgentCore Runtime deployment workflows",
+          "Model and prompt lifecycle controls",
+          "Reusable platform components and infrastructure automation",
+          "Centralized cost, rate-limit, scaling, and operational controls"
+        ],
+        "primary_member_aliases": [
+          "AWS Engineer B"
+        ],
+        "supporting_member_aliases": [
+          "AWS Engineer C",
+          "AWS Engineer E"
+        ],
+        "evidence_basis": [
+          "https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/",
+          "https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/"
+        ]
+      },
+      {
+        "id": "ws_multi_agent_systems",
+        "name": "Evidence-Aware Multi-Agent Systems",
+        "objective": "Coordinate specialized agents that can discover capabilities, delegate tasks, and validate outputs against authoritative sources with human oversight.",
+        "deliverables": [
+          "Sequential and hub-and-spoke multi-agent workflows",
+          "A2A capability discovery and intelligent routing",
+          "Authoritative-source verification stages",
+          "Human-in-the-loop review and escalation"
+        ],
+        "primary_member_aliases": [
+          "AWS Engineer C",
+          "AWS Engineer D"
+        ],
+        "supporting_member_aliases": [
+          "AWS Engineer A",
+          "AWS Engineer F"
+        ],
+        "evidence_basis": [
+          "https://aws.amazon.com/blogs/machine-learning/scaling-content-review-operations-with-multi-agent-workflow/",
+          "https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime/"
+        ]
+      },
+      {
+        "id": "ws_agentops",
+        "name": "AgentOps, Evaluation, and Observability",
+        "objective": "Operate non-deterministic agent systems as versioned, measurable, auditable production workloads.",
+        "deliverables": [
+          "Versioned agent, tool, memory, and configuration artifacts",
+          "Evaluation at tool, turn, session, and system levels",
+          "Cross-account monitoring and proactive incident response",
+          "Traceability, audit trails, quality monitoring, and cost attribution"
+        ],
+        "primary_member_aliases": [
+          "AWS Engineer C",
+          "AWS Engineer D"
+        ],
+        "supporting_member_aliases": [
+          "AWS Engineer B",
+          "AWS Engineer E"
+        ],
+        "evidence_basis": [
+          "https://aws.amazon.com/blogs/machine-learning/agentops-operationalize-agentic-ai-at-scale-with-amazon-bedrock-agentcore/",
+          "https://aws.amazon.com/blogs/machine-learning/agentwatch-proactive-aws-monitoring-with-ambient-agents/"
+        ]
+      },
+      {
+        "id": "ws_security_identity",
+        "name": "Identity, Security, and Multi-Tenant Governance",
+        "objective": "Ensure agents, users, tools, and tenants operate within explicit authorization boundaries and produce auditable actions.",
+        "deliverables": [
+          "AgentCore Identity authentication and token exchange patterns",
+          "Machine-to-machine and delegated user access",
+          "Secrets governance and KMS-backed key handling",
+          "Resource-based policies, tenant isolation, and CloudTrail auditability"
+        ],
+        "primary_member_aliases": [
+          "AWS Engineer F"
+        ],
+        "supporting_member_aliases": [
+          "AWS Engineer A",
+          "AWS Engineer D"
+        ],
+        "evidence_basis": [
+          "https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/",
+          "https://aws.amazon.com/blogs/security/secure-multi-tenant-ai-agents-with-amazon-bedrock-agentcore-resource-based-policies/"
+        ]
+      },
+      {
+        "id": "ws_resilience_gateway",
+        "name": "Resilience and LLM Gateway Architecture",
+        "objective": "Maintain model availability and application continuity while centralizing routing and governance across inference providers and regions.",
+        "deliverables": [
+          "Amazon Bedrock cross-Region inference",
+          "Intelligent request routing and model fallback",
+          "Quota isolation, load balancing, and account sharding",
+          "Production LLM gateway patterns and resilience testing"
+        ],
+        "primary_member_aliases": [
+          "AWS Engineer E"
+        ],
+        "supporting_member_aliases": [
+          "AWS Engineer B",
+          "AWS Engineer D"
+        ],
+        "evidence_basis": [
+          "https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"
+        ]
+      }
+    ],
+    "operating_principles": [
+      "Ground outputs in authorized enterprise sources and retain evidence provenance.",
+      "Treat LinkedIn and public professional content as claimed knowledge, not verified proficiency.",
+      "Apply least privilege and tenant isolation to every agent, tool, model, and data path.",
+      "Version and evaluate agent behavior before and after production deployment.",
+      "Design failure handling, routing, and observability before scaling usage.",
+      "Keep human review available for consequential or ambiguous actions."
+    ],
+    "definition_of_done": [
+      "Agents retrieve only content the requesting principal is authorized to access.",
+      "Multi-agent decisions and tool calls are traceable to evidence and identity context.",
+      "Evaluation and observability cover development and production behavior.",
+      "Inference has documented routing, fallback, quota isolation, and incident-response paths.",
+      "The platform exposes cost, latency, errors, quality, and access events to operators."
+    ]
+  },
+  "members": [
+    {
+      "alias": "AWS Engineer A",
+      "real_name_source_only": "Dani Mitchell",
+      "public_role": "Sr GenAI Specialist Solutions Architect; SA lead for Amazon Bedrock Knowledge Bases",
+      "kg_file": "aws_engineer_a.json",
+      "linkedin_url": "https://www.linkedin.com/in/aidanimitchell/",
+      "official_profile_url": "https://aws.amazon.com/blogs/machine-learning/author/buzecd/"
+    },
+    {
+      "alias": "AWS Engineer B",
+      "real_name_source_only": "Chaitra Mathur",
+      "public_role": "GenAI Specialist Solutions Architect",
+      "kg_file": "aws_engineer_b.json",
+      "linkedin_url": "https://www.linkedin.com/in/chaitramathur/",
+      "official_profile_url": "https://aws.amazon.com/blogs/machine-learning/author/mchaitra/"
+    },
+    {
+      "alias": "AWS Engineer C",
+      "real_name_source_only": "Sarath Krishnan",
+      "public_role": "Senior Gen AI/ML Specialist Solutions Architect",
+      "kg_file": "aws_engineer_c_sarath_krishnan_kg.json",
+      "linkedin_url": "https://www.linkedin.com/in/sarathkrish/",
+      "official_profile_url": "https://aws.amazon.com/blogs/machine-learning/author/saratpk/"
+    },
+    {
+      "alias": "AWS Engineer D",
+      "real_name_source_only": "Sriharsha M S",
+      "public_role": "Principal Gen AI Specialist Solutions Architect",
+      "kg_file": "aws_engineer_d_sriharsha_ms_kg.json",
+      "linkedin_url": "https://www.linkedin.com/in/sriharshams/",
+      "official_profile_url": "https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime/"
+    },
+    {
+      "alias": "AWS Engineer E",
+      "real_name_source_only": "Marcos Ortiz",
+      "public_role": "Principal Solutions Architect",
+      "kg_file": "aws_engineer_e.json",
+      "linkedin_url": "https://www.linkedin.com/in/ortizmarcos",
+      "official_profile_url": "https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"
+    },
+    {
+      "alias": "AWS Engineer F",
+      "real_name_source_only": "Satveer Khurpa",
+      "public_role": "Sr. WW Specialist Solutions Architect, Amazon Bedrock AgentCore",
+      "kg_file": "aws_engineer_f.json",
+      "linkedin_url": "https://www.linkedin.com/in/satveerkhurpa",
+      "official_profile_url": "https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/"
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:30:00Z",
+  "source": {
+    "type": "public_professional_sources",
+    "real_name": "Sarath Krishnan",
+    "display_alias": "AWS Engineer C",
+    "linkedin_url": "https://www.linkedin.com/in/sarathkrish/",
+    "official_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/author/saratpk/",
+      "https://aws.amazon.com/blogs/machine-learning/scaling-content-review-operations-with-multi-agent-workflow/"
+    ],
+    "sections_used": ["official_author_bio", "official_aws_blog_post", "public_linkedin_identity_url"],
+    "extraction_method": "official_aws_evidence_with_public_profile_identity_link",
+    "limitations": [
+      "This is a representative-team research artifact and does not claim actual reporting-line or team membership.",
+      "The graph represents public professional claims and authored technical material, not independently verified proficiency.",
+      "Confidence measures source support for extraction, not seniority, performance, or hiring suitability.",
+      "The LinkedIn URL is retained for provenance; knowledge nodes are based on the cited AWS official sources."
+    ]
+  },
+  "person": {
+    "id": "person_aws_engineer_c",
+    "name": "AWS Engineer C",
+    "knowledge_status": "claimed",
+    "headline": "Senior Gen AI/ML Specialist Solutions Architect",
+    "affiliations": [
+      {"name": "Amazon Web Services", "role": "Senior Gen AI/ML Specialist Solutions Architect", "status": "current_as_of_2026_aws_bio"}
+    ]
+  },
+  "nodes": [
+    {"id":"domain_generative_ai","label":"Generative AI","type":"domain","cluster":"production_ai","status":"claimed","confidence":1.0,"evidence_ids":["ev_role_bio"]},
+    {"id":"domain_machine_learning","label":"Machine Learning","type":"domain","cluster":"production_ai","status":"claimed","confidence":1.0,"evidence_ids":["ev_role_bio"]},
+    {"id":"domain_mlops","label":"MLOps","type":"domain","cluster":"production_ai","status":"claimed","confidence":1.0,"evidence_ids":["ev_role_bio"]},
+    {"id":"skill_production_ai_system_design","label":"Scalable, Secure, Production-Ready AI System Design","type":"skill","cluster":"production_ai","status":"claimed","confidence":0.99,"evidence_ids":["ev_role_bio"]},
+    {"id":"domain_multi_agent_systems","label":"Multi-Agent Systems","type":"domain","cluster":"multi_agent_content_review","status":"claimed","confidence":1.0,"evidence_ids":["ev_solution_overview"]},
+    {"id":"tool_amazon_bedrock_agentcore","label":"Amazon Bedrock AgentCore","type":"tool","cluster":"multi_agent_content_review","status":"claimed","confidence":1.0,"evidence_ids":["ev_platform_stack"]},
+    {"id":"tool_strands_agents","label":"Strands Agents","type":"tool","cluster":"multi_agent_content_review","status":"claimed","confidence":1.0,"evidence_ids":["ev_platform_stack"]},
+    {"id":"workflow_multi_agent_content_review","label":"Multi-Agent Content Review","type":"workflow","cluster":"multi_agent_content_review","status":"claimed","confidence":1.0,"evidence_ids":["ev_solution_overview"]},
+    {"id":"skill_content_claim_extraction","label":"Content Claim Extraction","type":"skill","cluster":"evidence_validation","status":"claimed","confidence":0.99,"evidence_ids":["ev_three_agent_pipeline"]},
+    {"id":"skill_authoritative_source_verification","label":"Authoritative-Source Verification","type":"skill","cluster":"evidence_validation","status":"claimed","confidence":1.0,"evidence_ids":["ev_three_agent_pipeline","ev_verification_process"]},
+    {"id":"skill_actionable_recommendation_generation","label":"Actionable Recommendation Generation","type":"skill","cluster":"evidence_validation","status":"claimed","confidence":0.99,"evidence_ids":["ev_three_agent_pipeline"]},
+    {"id":"method_sequential_agent_orchestration","label":"Sequential Agent Orchestration","type":"method","cluster":"multi_agent_content_review","status":"claimed","confidence":1.0,"evidence_ids":["ev_solution_overview","ev_three_agent_pipeline"]},
+    {"id":"tool_http_request","label":"Strands http_request Tool","type":"tool","cluster":"evidence_validation","status":"claimed","confidence":1.0,"evidence_ids":["ev_retrieval_tools"]},
+    {"id":"tool_aws_documentation_mcp_server","label":"AWS Documentation MCP Server","type":"tool","cluster":"evidence_validation","status":"claimed","confidence":1.0,"evidence_ids":["ev_retrieval_tools","ev_verification_process"]},
+    {"id":"method_structured_verification_classification","label":"Structured Verification Classification","type":"method","cluster":"evidence_validation","status":"claimed","confidence":1.0,"evidence_ids":["ev_verification_process"]},
+    {"id":"skill_prompt_tool_source_customization","label":"Prompt, Tool, and Verification-Source Customization","type":"skill","cluster":"adaptable_agent_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_adaptation_pattern"]},
+    {"id":"method_modular_agent_architecture","label":"Modular Agent Architecture","type":"method","cluster":"adaptable_agent_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_modular_design"]},
+    {"id":"domain_enterprise_content_operations","label":"Enterprise Content Operations","type":"domain","cluster":"adaptable_agent_architecture","status":"claimed","confidence":0.98,"evidence_ids":["ev_content_scope"]}
+  ],
+  "edges": [
+    {"source":"domain_generative_ai","target":"skill_production_ai_system_design","type":"CONTRIBUTES_TO","confidence":0.98,"evidence_ids":["ev_role_bio"]},
+    {"source":"domain_machine_learning","target":"skill_production_ai_system_design","type":"CONTRIBUTES_TO","confidence":0.98,"evidence_ids":["ev_role_bio"]},
+    {"source":"domain_mlops","target":"skill_production_ai_system_design","type":"CONTRIBUTES_TO","confidence":0.98,"evidence_ids":["ev_role_bio"]},
+    {"source":"tool_amazon_bedrock_agentcore","target":"workflow_multi_agent_content_review","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_platform_stack"]},
+    {"source":"tool_strands_agents","target":"workflow_multi_agent_content_review","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_platform_stack"]},
+    {"source":"workflow_multi_agent_content_review","target":"domain_multi_agent_systems","type":"SPECIALIZES_IN","confidence":0.99,"evidence_ids":["ev_solution_overview"]},
+    {"source":"skill_content_claim_extraction","target":"skill_authoritative_source_verification","type":"PRECEDES","confidence":1.0,"evidence_ids":["ev_three_agent_pipeline"]},
+    {"source":"skill_authoritative_source_verification","target":"skill_actionable_recommendation_generation","type":"PRECEDES","confidence":1.0,"evidence_ids":["ev_three_agent_pipeline"]},
+    {"source":"method_sequential_agent_orchestration","target":"workflow_multi_agent_content_review","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_solution_overview"]},
+    {"source":"tool_http_request","target":"skill_content_claim_extraction","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_retrieval_tools"]},
+    {"source":"tool_aws_documentation_mcp_server","target":"skill_authoritative_source_verification","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_retrieval_tools","ev_verification_process"]},
+    {"source":"method_structured_verification_classification","target":"skill_authoritative_source_verification","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_verification_process"]},
+    {"source":"method_modular_agent_architecture","target":"skill_prompt_tool_source_customization","type":"ENABLES","confidence":0.98,"evidence_ids":["ev_modular_design","ev_adaptation_pattern"]},
+    {"source":"skill_prompt_tool_source_customization","target":"workflow_multi_agent_content_review","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_adaptation_pattern"]},
+    {"source":"workflow_multi_agent_content_review","target":"domain_enterprise_content_operations","type":"APPLIED_TO","confidence":0.99,"evidence_ids":["ev_content_scope"]}
+  ],
+  "evidence": [
+    {"id":"ev_role_bio","section":"official_author_bio","excerpt":"AWS identifies Sarath Krishnan as a Senior Gen AI/ML Specialist Solutions Architect helping enterprises design and deploy GenAI and ML solutions, with GenAI, ML, and MLOps expertise for scalable, secure, production-ready AI systems."},
+    {"id":"ev_platform_stack","section":"official_aws_blog_post","excerpt":"The authored solution uses Amazon Bedrock AgentCore with the Strands Agents SDK to deploy and operate coordinated AI agents at scale."},
+    {"id":"ev_solution_overview","section":"official_aws_blog_post","excerpt":"The solution implements a coordinated multi-agent pipeline in which each specialized agent processes the previous agent's output and passes enriched information onward."},
+    {"id":"ev_three_agent_pipeline","section":"official_aws_blog_post","excerpt":"The pipeline sequences a content scanner, an authoritative-source verification agent, and a recommendation agent that produces actionable updates."},
+    {"id":"ev_retrieval_tools","section":"official_aws_blog_post","excerpt":"The scanner retrieves content with Strands http_request; the verifier queries the AWS Documentation MCP server for current documentation."},
+    {"id":"ev_verification_process","section":"official_aws_blog_post","excerpt":"Verification compares claims against authoritative sources and classifies results as CURRENT, PARTIALLY_OBSOLETE, or FULLY_OBSOLETE with evidence."},
+    {"id":"ev_modular_design","section":"official_aws_blog_post","excerpt":"Clear agent interfaces and responsibilities create a modular design that can add agents or expand capabilities as content complexity grows."},
+    {"id":"ev_adaptation_pattern","section":"official_aws_blog_post","excerpt":"The pattern adapts to other domains by changing prompts, access tools, and official verification sources while retaining the extraction-verification-recommendation flow."},
+    {"id":"ev_content_scope","section":"official_aws_blog_post","excerpt":"The approach is described as applicable to product documentation, knowledge bases, marketing materials, technical specifications, and other enterprise content."}
+  ],
+  "summary": {
+    "primary_clusters": [
+      {"name":"Production AI","node_ids":["domain_generative_ai","domain_machine_learning","domain_mlops","skill_production_ai_system_design"]},
+      {"name":"Multi-Agent Content Review","node_ids":["domain_multi_agent_systems","tool_amazon_bedrock_agentcore","tool_strands_agents","workflow_multi_agent_content_review","method_sequential_agent_orchestration"]},
+      {"name":"Evidence Validation","node_ids":["skill_content_claim_extraction","skill_authoritative_source_verification","skill_actionable_recommendation_generation","tool_http_request","tool_aws_documentation_mcp_server","method_structured_verification_classification"]},
+      {"name":"Adaptable Agent Architecture","node_ids":["skill_prompt_tool_source_customization","method_modular_agent_architecture","domain_enterprise_content_operations"]}
+    ],
+    "node_count": 18,
+    "edge_count": 15,
+    "default_verification_status": "claimed"
+  }
+}

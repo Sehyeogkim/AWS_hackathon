@@ -1,0 +1,205 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:45:34Z",
+  "source": {
+    "type": "public_professional_profile_and_official_aws_sources",
+    "real_name": "Chaitra Mathur",
+    "linkedin_profile_url": "https://www.linkedin.com/in/chaitramathur/",
+    "official_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/author/mchaitra/",
+      "https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/",
+      "https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/",
+      "https://aws.amazon.com/blogs/machine-learning/effectively-manage-foundation-models-for-generative-ai-applications-with-amazon-sagemaker-model-registry/"
+    ],
+    "sections_used": [
+      "official_aws_author_bio",
+      "official_aws_technical_articles",
+      "public_linkedin_profile_url"
+    ],
+    "extraction_method": "official_aws_source_read_with_evidence_backed_semantic_normalization",
+    "limitations": [
+      "This is a representative-team artifact and does not claim to reproduce an actual AWS reporting line or team roster.",
+      "The display identity is anonymized; the real name and source URLs are retained only in source metadata for auditability.",
+      "Technical concepts are derived from official AWS author bios and co-authored technical articles, not a complete LinkedIn profile export.",
+      "The official AWS author page and a newer article use different role titles; the newer 2025 article is used for the display headline while both are retained as time-scoped evidence.",
+      "Every node remains claimed knowledge; article authorship and extraction confidence do not establish individual proficiency.",
+      "No photos, contact details, protected attributes, or sensitive personal information are included."
+    ]
+  },
+  "person": {
+    "id": "person_aws_engineer_b",
+    "name": "AWS Engineer B",
+    "headline": "GenAI Specialist Solutions Architect",
+    "affiliations": [
+      {
+        "name": "Amazon Web Services",
+        "relationship": "current_employment",
+        "period": "Current as of official AWS author bio accessed 2026-08-14"
+      }
+    ],
+    "knowledge_status": "claimed"
+  },
+  "nodes": [
+    {"id":"domain_generative_ai","label":"Generative AI","type":"domain","cluster":"genai_platform_architecture","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_role_current","ev_b_foundation_challenges"]},
+    {"id":"domain_ai_ml","label":"Artificial Intelligence and Machine Learning","type":"domain","cluster":"genai_platform_architecture","status":"claimed","confidence":0.98,"evidence_ids":["ev_b_architecture_role"]},
+    {"id":"skill_scalable_genai_platform_design","label":"Scalable Generative AI Platform Design","type":"skill","cluster":"genai_platform_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_role_current"]},
+    {"id":"skill_genai_operationalization","label":"Generative AI Operationalization","type":"skill","cluster":"genai_platform_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_role_current"]},
+    {"id":"skill_secure_aws_solution_architecture","label":"Robust, Scalable, and Secure AWS Solution Architecture","type":"skill","cluster":"genai_platform_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_architecture_role"]},
+    {"id":"workflow_genai_foundation","label":"Enterprise Generative AI Foundation","type":"workflow","cluster":"genai_platform_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_foundation_platform"]},
+
+    {"id":"tool_amazon_bedrock_agentcore","label":"Amazon Bedrock AgentCore","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_agentcore_platform"]},
+    {"id":"tool_agentcore_runtime","label":"Amazon Bedrock AgentCore Runtime","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_agentcore_platform","ev_b_direct_code"]},
+    {"id":"skill_secure_agent_operations","label":"Secure Agent Deployment and Operations at Scale","type":"skill","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_agentcore_platform"]},
+    {"id":"method_direct_code_deployment","label":"AgentCore Direct Code Deployment","type":"method","cluster":"agent_deployment","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_direct_code"]},
+    {"id":"programming_language_python","label":"Python","type":"programming_language","cluster":"agent_deployment","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_direct_code"]},
+    {"id":"workflow_zip_agent_deployment","label":"ZIP-Based Agent Deployment to AgentCore Runtime","type":"workflow","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_direct_code"]},
+    {"id":"tool_amazon_s3","label":"Amazon S3","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_direct_code"]},
+    {"id":"tool_agentcore_starter_toolkit","label":"AgentCore Starter Toolkit","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_direct_code"]},
+    {"id":"tool_strands_agents_sdk","label":"Strands Agents SDK","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_direct_code"]},
+    {"id":"method_container_based_deployment","label":"Container-Based Agent Deployment","type":"method","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_deployment_options"]},
+    {"id":"tool_docker","label":"Docker","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_deployment_options"]},
+    {"id":"tool_amazon_ecr","label":"Amazon Elastic Container Registry","type":"tool","cluster":"agent_deployment","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_deployment_options"]},
+
+    {"id":"method_retrieval_augmented_generation","label":"Retrieval-Augmented Generation","type":"method","cluster":"genai_orchestration","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_foundation_challenges","ev_b_orchestration"]},
+    {"id":"method_agentic_workflows","label":"Agentic Workflows","type":"method","cluster":"genai_orchestration","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_foundation_challenges","ev_b_orchestration"]},
+    {"id":"skill_genai_orchestration","label":"Generative AI Workflow Orchestration","type":"skill","cluster":"genai_orchestration","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_orchestration"]},
+    {"id":"skill_monitoring","label":"Generative AI Monitoring","type":"skill","cluster":"genai_orchestration","status":"claimed","confidence":0.98,"evidence_ids":["ev_b_foundation_challenges"]},
+    {"id":"skill_ci_cd","label":"Generative AI CI/CD","type":"skill","cluster":"genai_orchestration","status":"claimed","confidence":0.98,"evidence_ids":["ev_b_foundation_challenges"]},
+
+    {"id":"skill_centralized_governance_and_operations","label":"Centralized Generative AI Governance and Operations","type":"skill","cluster":"platform_governance","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_foundation_platform"]},
+    {"id":"skill_security_and_governance","label":"Standardized Security and Governance Policies","type":"skill","cluster":"platform_governance","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_foundation_platform"]},
+    {"id":"method_model_hub","label":"Model Hub","type":"method","cluster":"platform_governance","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"method_tool_agent_hub","label":"Tool and Agent Hub","type":"method","cluster":"platform_governance","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"method_model_gateway","label":"Multi-Tenant Model Gateway","type":"method","cluster":"platform_governance","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"method_model_context_protocol","label":"Model Context Protocol","type":"method","cluster":"platform_governance","status":"claimed","confidence":0.98,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"method_agent2agent_protocol","label":"Agent2Agent Protocol","type":"method","cluster":"platform_governance","status":"claimed","confidence":0.98,"evidence_ids":["ev_b_hubs_gateway"]},
+
+    {"id":"skill_access_authorization","label":"Access and Authorization","type":"skill","cluster":"gateway_controls","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"skill_rate_limiting_and_throttling","label":"Rate Limiting and Throttling","type":"skill","cluster":"gateway_controls","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"skill_cost_attribution","label":"Model Usage Cost Attribution","type":"skill","cluster":"gateway_controls","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"skill_scaling_and_load_balancing","label":"Scaling and Load Balancing","type":"skill","cluster":"gateway_controls","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"skill_guardrails","label":"Generative AI Guardrails","type":"skill","cluster":"gateway_controls","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"id":"skill_caching","label":"Prompt and Response Caching","type":"skill","cluster":"gateway_controls","status":"claimed","confidence":0.98,"evidence_ids":["ev_b_hubs_gateway"]},
+
+    {"id":"tool_sagemaker_model_registry","label":"Amazon SageMaker Model Registry","type":"tool","cluster":"model_lifecycle","status":"claimed","confidence":1.0,"evidence_ids":["ev_b_model_registry"]},
+    {"id":"skill_foundation_model_management","label":"Foundation Model Lifecycle Management","type":"skill","cluster":"model_lifecycle","status":"claimed","confidence":0.99,"evidence_ids":["ev_b_model_registry"]}
+  ],
+  "edges": [
+    {"source":"skill_scalable_genai_platform_design","target":"domain_generative_ai","type":"APPLIED_TO","confidence":0.99,"evidence_ids":["ev_b_role_current"]},
+    {"source":"skill_genai_operationalization","target":"skill_scalable_genai_platform_design","type":"COMPLEMENTED_BY","confidence":0.98,"evidence_ids":["ev_b_role_current"]},
+    {"source":"skill_secure_aws_solution_architecture","target":"domain_ai_ml","type":"APPLIED_TO","confidence":0.98,"evidence_ids":["ev_b_architecture_role"]},
+    {"source":"workflow_genai_foundation","target":"skill_scalable_genai_platform_design","type":"BASED_ON","confidence":0.98,"evidence_ids":["ev_b_foundation_platform"]},
+
+    {"source":"tool_amazon_bedrock_agentcore","target":"skill_secure_agent_operations","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_b_agentcore_platform"]},
+    {"source":"tool_agentcore_runtime","target":"skill_secure_agent_operations","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_b_agentcore_platform"]},
+    {"source":"method_direct_code_deployment","target":"tool_agentcore_runtime","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_b_direct_code"]},
+    {"source":"programming_language_python","target":"method_direct_code_deployment","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_b_direct_code"]},
+    {"source":"workflow_zip_agent_deployment","target":"method_direct_code_deployment","type":"BASED_ON","confidence":0.99,"evidence_ids":["ev_b_direct_code"]},
+    {"source":"tool_amazon_s3","target":"workflow_zip_agent_deployment","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_direct_code"]},
+    {"source":"tool_agentcore_starter_toolkit","target":"workflow_zip_agent_deployment","type":"AUTOMATES","confidence":0.99,"evidence_ids":["ev_b_direct_code"]},
+    {"source":"tool_strands_agents_sdk","target":"workflow_zip_agent_deployment","type":"USED_FOR","confidence":0.98,"evidence_ids":["ev_b_direct_code"]},
+    {"source":"method_container_based_deployment","target":"tool_agentcore_runtime","type":"USED_FOR","confidence":0.99,"evidence_ids":["ev_b_deployment_options"]},
+    {"source":"tool_docker","target":"method_container_based_deployment","type":"USED_FOR","confidence":0.99,"evidence_ids":["ev_b_deployment_options"]},
+    {"source":"tool_amazon_ecr","target":"method_container_based_deployment","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_deployment_options"]},
+    {"source":"method_direct_code_deployment","target":"method_container_based_deployment","type":"COMPLEMENTED_BY","confidence":0.98,"evidence_ids":["ev_b_deployment_options"]},
+
+    {"source":"method_retrieval_augmented_generation","target":"skill_genai_orchestration","type":"USED_FOR","confidence":0.99,"evidence_ids":["ev_b_orchestration"]},
+    {"source":"method_agentic_workflows","target":"skill_genai_orchestration","type":"USED_FOR","confidence":0.99,"evidence_ids":["ev_b_orchestration"]},
+    {"source":"skill_genai_orchestration","target":"workflow_genai_foundation","type":"CONTRIBUTES_TO","confidence":0.99,"evidence_ids":["ev_b_foundation_platform","ev_b_orchestration"]},
+    {"source":"skill_monitoring","target":"skill_genai_operationalization","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_b_foundation_challenges"]},
+    {"source":"skill_ci_cd","target":"skill_genai_operationalization","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_b_foundation_challenges"]},
+
+    {"source":"skill_centralized_governance_and_operations","target":"workflow_genai_foundation","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_foundation_platform"]},
+    {"source":"skill_security_and_governance","target":"workflow_genai_foundation","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_foundation_platform"]},
+    {"source":"method_model_hub","target":"workflow_genai_foundation","type":"CONTRIBUTES_TO","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"method_tool_agent_hub","target":"workflow_genai_foundation","type":"CONTRIBUTES_TO","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"method_model_gateway","target":"workflow_genai_foundation","type":"CONTRIBUTES_TO","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"method_model_context_protocol","target":"method_tool_agent_hub","type":"ENABLES","confidence":0.98,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"method_agent2agent_protocol","target":"method_tool_agent_hub","type":"ENABLES","confidence":0.98,"evidence_ids":["ev_b_hubs_gateway"]},
+
+    {"source":"skill_access_authorization","target":"method_model_gateway","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"skill_rate_limiting_and_throttling","target":"method_model_gateway","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"skill_cost_attribution","target":"method_model_gateway","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"skill_scaling_and_load_balancing","target":"method_model_gateway","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"skill_guardrails","target":"method_model_gateway","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_b_hubs_gateway"]},
+    {"source":"skill_caching","target":"method_model_gateway","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_b_hubs_gateway"]},
+
+    {"source":"tool_sagemaker_model_registry","target":"skill_foundation_model_management","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_b_model_registry"]},
+    {"source":"skill_foundation_model_management","target":"workflow_genai_foundation","type":"SUPPORTS","confidence":0.97,"evidence_ids":["ev_b_model_registry","ev_b_foundation_platform"]}
+  ],
+  "evidence": [
+    {
+      "id": "ev_b_role_current",
+      "section": "official_aws_author_bio",
+      "excerpt": "A November 2025 AWS author bio identifies Chaitra Mathur as a GenAI Specialist Solutions Architect at AWS who works with customers across industries to build scalable generative AI platforms and operationalize them.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/"
+    },
+    {
+      "id": "ev_b_architecture_role",
+      "section": "official_aws_author_profile",
+      "excerpt": "AWS's author profile describes Chaitra Mathur as a Principal Solutions Architect advising customers on robust, scalable, and secure AWS solutions and on using AWS AI/ML and generative AI services.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/author/mchaitra/"
+    },
+    {
+      "id": "ev_b_agentcore_platform",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored article describes Amazon Bedrock AgentCore as a platform for building, deploying, and operating agents securely at scale, with AgentCore Runtime providing low-latency serverless environments, session isolation, multiple agent frameworks, and support for multimodal and long-running workloads.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/"
+    },
+    {
+      "id": "ev_b_direct_code",
+      "section": "official_aws_technical_article",
+      "excerpt": "The article demonstrates Python direct-code deployment: package agent code and dependencies as a ZIP archive, upload it to Amazon S3, configure AgentCore Runtime, and optionally use the AgentCore starter toolkit and Strands Agents SDK to simplify deployment.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/"
+    },
+    {
+      "id": "ev_b_deployment_options",
+      "section": "official_aws_technical_article",
+      "excerpt": "The article compares direct-code deployment with container-based deployment, where teams create a Dockerfile, build a container, upload it to Amazon ECR, and deploy it to AgentCore Runtime.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/iterate-faster-with-amazon-bedrock-agentcore-runtime-direct-code-deployment/"
+    },
+    {
+      "id": "ev_b_foundation_challenges",
+      "section": "official_aws_technical_article",
+      "excerpt": "The mature generative AI foundation article explains that production systems combine foundation models, tools, APIs, domain data, RAG, and agents, and require safety controls, monitoring, automation, and CI/CD.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/"
+    },
+    {
+      "id": "ev_b_foundation_platform",
+      "section": "official_aws_technical_article",
+      "excerpt": "The article proposes an enterprise generative AI foundation with reusable components and blueprints, centralized governance and operations, standardized security and governance policies, and an end-to-end platform lifecycle.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/"
+    },
+    {
+      "id": "ev_b_hubs_gateway",
+      "section": "official_aws_technical_article",
+      "excerpt": "The article defines model hubs, tool and agent hubs using protocols such as MCP and A2A, plus a multi-tenant model gateway with access control, rate limiting, cost attribution, load balancing, guardrails, and caching.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/"
+    },
+    {
+      "id": "ev_b_orchestration",
+      "section": "official_aws_technical_article",
+      "excerpt": "The article describes orchestration as multi-step model, data, tool, and API workflows, including deterministic RAG flows and agentic flows where an LLM plans, reasons, and calls external tools.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/architect-a-mature-generative-ai-foundation-on-aws/"
+    },
+    {
+      "id": "ev_b_model_registry",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored SageMaker Model Registry article covers managing foundation models for generative AI applications, including registering model artifacts and tracking licensing acceptance as part of the model lifecycle.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/effectively-manage-foundation-models-for-generative-ai-applications-with-amazon-sagemaker-model-registry/"
+    }
+  ],
+  "summary": {
+    "primary_clusters": [
+      {"name":"Generative AI Platform Architecture","node_ids":["domain_generative_ai","domain_ai_ml","skill_scalable_genai_platform_design","skill_genai_operationalization","skill_secure_aws_solution_architecture","workflow_genai_foundation"]},
+      {"name":"Agent Deployment","node_ids":["tool_amazon_bedrock_agentcore","tool_agentcore_runtime","skill_secure_agent_operations","method_direct_code_deployment","programming_language_python","workflow_zip_agent_deployment","tool_amazon_s3","tool_agentcore_starter_toolkit","tool_strands_agents_sdk","method_container_based_deployment","tool_docker","tool_amazon_ecr"]},
+      {"name":"Generative AI Orchestration","node_ids":["method_retrieval_augmented_generation","method_agentic_workflows","skill_genai_orchestration","skill_monitoring","skill_ci_cd"]},
+      {"name":"Platform Governance","node_ids":["skill_centralized_governance_and_operations","skill_security_and_governance","method_model_hub","method_tool_agent_hub","method_model_gateway","method_model_context_protocol","method_agent2agent_protocol"]},
+      {"name":"Gateway Controls","node_ids":["skill_access_authorization","skill_rate_limiting_and_throttling","skill_cost_attribution","skill_scaling_and_load_balancing","skill_guardrails","skill_caching"]},
+      {"name":"Model Lifecycle","node_ids":["tool_sagemaker_model_registry","skill_foundation_model_management"]}
+    ],
+    "node_count": 38,
+    "edge_count": 36,
+    "default_verification_status": "claimed"
+  }
+}

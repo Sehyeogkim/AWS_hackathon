@@ -1,0 +1,81 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:47:53Z",
+  "source": {
+    "type": "public_professional_sources",
+    "real_name": "Satveer Khurpa",
+    "display_alias": "AWS Engineer F",
+    "linkedin_url": "https://www.linkedin.com/in/satveerkhurpa",
+    "official_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-agentcore-identity-securing-agentic-ai-at-scale/",
+      "https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/",
+      "https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/",
+      "https://aws.amazon.com/blogs/security/secure-multi-tenant-ai-agents-with-amazon-bedrock-agentcore-resource-based-policies/"
+    ],
+    "sections_used": ["official_aws_author_bio", "official_aws_technical_articles", "public_linkedin_identity_url"],
+    "extraction_method": "official_aws_evidence_with_public_linkedin_identity_link",
+    "limitations": [
+      "This representative-team artifact does not claim an actual AWS reporting line or team roster.",
+      "Knowledge claims come from official AWS bios and co-authored technical work, not a complete LinkedIn profile export.",
+      "Confidence measures source support, not proficiency, performance, or hiring suitability.",
+      "No contact details, protected attributes, or private LinkedIn data were collected."
+    ]
+  },
+  "person": {
+    "id": "person_aws_engineer_f",
+    "name": "AWS Engineer F",
+    "knowledge_status": "claimed",
+    "headline": "Sr. WW Specialist Solutions Architect, Amazon Bedrock AgentCore",
+    "affiliations": [{"name": "Amazon Web Services", "role": "Sr. WW Specialist Solutions Architect, Amazon Bedrock AgentCore", "status": "current_as_of_2026_aws_bio"}]
+  },
+  "nodes": [
+    {"id":"domain_agentic_ai_security","label":"Agentic AI Security","type":"domain","cluster":"agent_identity_security","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"id":"tool_amazon_bedrock_agentcore_identity","label":"Amazon Bedrock AgentCore Identity","type":"tool","cluster":"agent_identity_security","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_role","ev_f_private_key_jwt"]},
+    {"id":"skill_identity_and_access_management","label":"Agent Identity and Access Management","type":"skill","cluster":"agent_identity_security","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"id":"skill_defense_in_depth_security","label":"Defense-in-Depth Security","type":"skill","cluster":"agent_identity_security","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"id":"skill_secure_agentic_ai_architecture","label":"Secure Agentic AI Architecture","type":"skill","cluster":"agent_identity_security","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"id":"method_private_key_jwt_authentication","label":"Private Key JWT Client Authentication","type":"method","cluster":"agent_authentication","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_private_key_jwt"]},
+    {"id":"tool_aws_kms","label":"AWS Key Management Service","type":"tool","cluster":"agent_authentication","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_private_key_jwt"]},
+    {"id":"method_m2m_authentication","label":"Machine-to-Machine Authentication","type":"method","cluster":"agent_authentication","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_grant_flows"]},
+    {"id":"method_on_behalf_of_token_exchange","label":"On-Behalf-Of Token Exchange","type":"method","cluster":"agent_authentication","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_grant_flows"]},
+    {"id":"method_user_delegated_access","label":"User-Delegated Access","type":"method","cluster":"agent_authentication","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_grant_flows"]},
+    {"id":"tool_aws_cloudtrail","label":"AWS CloudTrail","type":"tool","cluster":"security_governance","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_auditability"]},
+    {"id":"skill_auditable_agent_access","label":"Auditable Agent Access","type":"skill","cluster":"security_governance","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_auditability"]},
+    {"id":"tool_aws_secrets_manager","label":"AWS Secrets Manager","type":"tool","cluster":"security_governance","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_secrets_governance"]},
+    {"id":"skill_secrets_governance","label":"Agent Secrets Governance","type":"skill","cluster":"security_governance","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_secrets_governance"]},
+    {"id":"method_resource_based_policies","label":"AgentCore Resource-Based Policies","type":"method","cluster":"security_governance","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_resource_policies"]},
+    {"id":"skill_multi_tenant_access_control","label":"Multi-Tenant Agent Access Control","type":"skill","cluster":"security_governance","status":"claimed","confidence":1.0,"evidence_ids":["ev_f_resource_policies"]}
+  ],
+  "edges": [
+    {"source":"tool_amazon_bedrock_agentcore_identity","target":"skill_identity_and_access_management","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"source":"skill_identity_and_access_management","target":"skill_secure_agentic_ai_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"source":"skill_defense_in_depth_security","target":"skill_secure_agentic_ai_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_f_role"]},
+    {"source":"tool_aws_kms","target":"method_private_key_jwt_authentication","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_f_private_key_jwt"]},
+    {"source":"method_private_key_jwt_authentication","target":"method_m2m_authentication","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_f_grant_flows"]},
+    {"source":"method_private_key_jwt_authentication","target":"method_on_behalf_of_token_exchange","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_f_grant_flows"]},
+    {"source":"method_private_key_jwt_authentication","target":"method_user_delegated_access","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_f_grant_flows"]},
+    {"source":"tool_aws_cloudtrail","target":"skill_auditable_agent_access","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_f_auditability"]},
+    {"source":"tool_aws_secrets_manager","target":"skill_secrets_governance","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_f_secrets_governance"]},
+    {"source":"skill_secrets_governance","target":"skill_secure_agentic_ai_architecture","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_f_secrets_governance","ev_f_role"]},
+    {"source":"method_resource_based_policies","target":"skill_multi_tenant_access_control","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_f_resource_policies"]},
+    {"source":"skill_multi_tenant_access_control","target":"skill_secure_agentic_ai_architecture","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_f_resource_policies","ev_f_role"]}
+  ],
+  "evidence": [
+    {"id":"ev_f_role","section":"official_aws_author_bio","excerpt":"AWS identifies Satveer Khurpa as a Sr. WW Specialist Solutions Architect for Amazon Bedrock AgentCore, specializing in agentic AI security, AgentCore Identity, IAM, defense-in-depth, and secure agentic architecture.","source_url":"https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/"},
+    {"id":"ev_f_private_key_jwt","section":"official_aws_technical_article","excerpt":"The co-authored July 29, 2026 article implements Private Key JWT client authentication in AgentCore Identity using an AWS KMS signing key whose private key never leaves KMS.","source_url":"https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/"},
+    {"id":"ev_f_grant_flows","section":"official_aws_technical_article","excerpt":"Private Key JWT authentication is documented for machine-to-machine, on-behalf-of token exchange, and user-delegated authorization-code flows.","source_url":"https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/"},
+    {"id":"ev_f_auditability","section":"official_aws_technical_article","excerpt":"Agent token retrieval and KMS signing operations are recorded in AWS CloudTrail, providing an auditable access trail.","source_url":"https://aws.amazon.com/blogs/machine-learning/authenticate-with-private-key-jwt-using-amazon-bedrock-agentcore-identity/"},
+    {"id":"ev_f_secrets_governance","section":"official_aws_technical_article","excerpt":"AgentCore Identity can reference existing AWS Secrets Manager secrets while preserving organizational controls for encryption, rotation, access policies, tags, and governance auditing.","source_url":"https://aws.amazon.com/blogs/machine-learning/reference-your-own-aws-secrets-manager-secrets-in-amazon-bedrock-agentcore-identity/"},
+    {"id":"ev_f_resource_policies","section":"official_aws_security_article","excerpt":"AgentCore resource-based policies centralize multi-tenant access control and combine cross-account IAM permissions with VPC-origin restrictions and layered identity controls.","source_url":"https://aws.amazon.com/blogs/security/secure-multi-tenant-ai-agents-with-amazon-bedrock-agentcore-resource-based-policies/"}
+  ],
+  "summary": {
+    "primary_clusters": [
+      {"name":"Agent Identity Security","node_ids":["domain_agentic_ai_security","tool_amazon_bedrock_agentcore_identity","skill_identity_and_access_management","skill_defense_in_depth_security","skill_secure_agentic_ai_architecture"]},
+      {"name":"Agent Authentication","node_ids":["method_private_key_jwt_authentication","tool_aws_kms","method_m2m_authentication","method_on_behalf_of_token_exchange","method_user_delegated_access"]},
+      {"name":"Security Governance","node_ids":["tool_aws_cloudtrail","skill_auditable_agent_access","tool_aws_secrets_manager","skill_secrets_governance","method_resource_based_policies","skill_multi_tenant_access_control"]}
+    ],
+    "node_count": 16,
+    "edge_count": 12,
+    "default_verification_status": "claimed"
+  }
+}

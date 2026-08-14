@@ -1,0 +1,71 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:47:53Z",
+  "source": {
+    "type": "public_professional_sources",
+    "real_name": "Marcos Ortiz",
+    "display_alias": "AWS Engineer E",
+    "linkedin_url": "https://www.linkedin.com/in/ortizmarcos",
+    "official_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/",
+      "https://github.com/aws-samples/sample-resilient-llm-inference"
+    ],
+    "sections_used": ["official_aws_author_bio", "official_aws_technical_article", "official_aws_sample", "public_linkedin_identity_url"],
+    "extraction_method": "official_aws_evidence_with_public_linkedin_identity_link",
+    "limitations": [
+      "This representative-team artifact does not claim an actual AWS reporting line or team roster.",
+      "Knowledge claims come from an official AWS bio and co-authored technical work, not a complete LinkedIn profile export.",
+      "Confidence measures source support, not proficiency, performance, or hiring suitability.",
+      "No contact details, protected attributes, or private LinkedIn data were collected."
+    ]
+  },
+  "person": {
+    "id": "person_aws_engineer_e",
+    "name": "AWS Engineer E",
+    "knowledge_status": "claimed",
+    "headline": "Principal Solutions Architect",
+    "affiliations": [{"name": "Amazon Web Services", "role": "Principal Solutions Architect", "status": "current_as_of_2026_aws_bio"}]
+  },
+  "nodes": [
+    {"id":"domain_generative_ai","label":"Generative AI","type":"domain","cluster":"resilient_genai","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_resilience_overview"]},
+    {"id":"skill_scalable_solution_architecture","label":"Scalable Solution Architecture","type":"skill","cluster":"resilient_genai","status":"claimed","confidence":0.99,"evidence_ids":["ev_e_role"]},
+    {"id":"skill_resilient_llm_inference_architecture","label":"Resilient LLM Inference Architecture","type":"skill","cluster":"resilient_genai","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_resilience_overview"]},
+    {"id":"tool_amazon_bedrock","label":"Amazon Bedrock","type":"tool","cluster":"resilient_genai","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_cross_region"]},
+    {"id":"method_cross_region_inference","label":"Cross-Region Inference","type":"method","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_cross_region"]},
+    {"id":"method_aws_account_sharding","label":"AWS Account Sharding","type":"method","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_account_sharding"]},
+    {"id":"workflow_llm_gateway","label":"LLM Gateway","type":"workflow","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"id":"method_intelligent_request_routing","label":"Intelligent Request Routing","type":"method","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"id":"method_model_fallback","label":"Model Fallback","type":"method","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"id":"method_load_balancing","label":"Multi-Model Load Balancing","type":"method","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"id":"method_quota_isolation","label":"Per-Consumer Quota Isolation","type":"method","cluster":"resilience_patterns","status":"claimed","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"id":"skill_llm_gateway_governance","label":"LLM Gateway Governance","type":"skill","cluster":"resilience_patterns","status":"claimed","confidence":0.99,"evidence_ids":["ev_e_gateway"]}
+  ],
+  "edges": [
+    {"source":"skill_scalable_solution_architecture","target":"domain_generative_ai","type":"APPLIED_TO","confidence":0.98,"evidence_ids":["ev_e_role","ev_e_resilience_overview"]},
+    {"source":"tool_amazon_bedrock","target":"method_cross_region_inference","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_e_cross_region"]},
+    {"source":"method_cross_region_inference","target":"skill_resilient_llm_inference_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_e_cross_region"]},
+    {"source":"method_aws_account_sharding","target":"skill_resilient_llm_inference_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_e_account_sharding"]},
+    {"source":"workflow_llm_gateway","target":"skill_resilient_llm_inference_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"source":"workflow_llm_gateway","target":"method_intelligent_request_routing","type":"AUTOMATES","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"source":"method_model_fallback","target":"skill_resilient_llm_inference_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"source":"method_load_balancing","target":"skill_resilient_llm_inference_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"source":"method_quota_isolation","target":"skill_resilient_llm_inference_architecture","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_e_gateway"]},
+    {"source":"workflow_llm_gateway","target":"skill_llm_gateway_governance","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_e_gateway"]}
+  ],
+  "evidence": [
+    {"id":"ev_e_role","section":"official_aws_author_bio","excerpt":"AWS identifies Marcos Ortiz as a Principal Solutions Architect who works with enterprise customers to design and implement scalable solutions.","source_url":"https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"},
+    {"id":"ev_e_resilience_overview","section":"official_aws_technical_article","excerpt":"The co-authored June 30, 2026 article presents five practical patterns for resilient generative AI and highly available LLM inference at production scale.","source_url":"https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"},
+    {"id":"ev_e_cross_region","section":"official_aws_technical_article","excerpt":"Amazon Bedrock cross-Region inference automatically routes requests across Regions to improve throughput and availability and reduce throttling risk.","source_url":"https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"},
+    {"id":"ev_e_account_sharding","section":"official_aws_technical_article","excerpt":"AWS account sharding distributes inference across accounts with independent quotas and fault-isolation boundaries for multi-team and multi-tenant workloads.","source_url":"https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"},
+    {"id":"ev_e_gateway","section":"official_aws_technical_article","excerpt":"The LLM gateway pattern provides routing, failover, governance, load balancing, retry and fallback logic, quota management, and per-consumer isolation across models and accounts.","source_url":"https://aws.amazon.com/blogs/machine-learning/implementing-resilience-patterns-with-amazon-bedrock-and-llm-gateway/"}
+  ],
+  "summary": {
+    "primary_clusters": [
+      {"name":"Resilient Generative AI","node_ids":["domain_generative_ai","skill_scalable_solution_architecture","skill_resilient_llm_inference_architecture","tool_amazon_bedrock"]},
+      {"name":"Resilience Patterns and LLM Gateway","node_ids":["method_cross_region_inference","method_aws_account_sharding","workflow_llm_gateway","method_intelligent_request_routing","method_model_fallback","method_load_balancing","method_quota_isolation","skill_llm_gateway_governance"]}
+    ],
+    "node_count": 12,
+    "edge_count": 10,
+    "default_verification_status": "claimed"
+  }
+}

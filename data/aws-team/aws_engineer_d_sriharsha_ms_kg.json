@@ -1,0 +1,107 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:30:00Z",
+  "source": {
+    "type": "public_professional_sources",
+    "real_name": "Sriharsha M S",
+    "display_alias": "AWS Engineer D",
+    "linkedin_url": "https://www.linkedin.com/in/sriharshams/",
+    "official_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/agentwatch-proactive-aws-monitoring-with-ambient-agents/",
+      "https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime/"
+    ],
+    "sections_used": ["official_author_bio", "official_aws_blog_posts", "public_linkedin_about"],
+    "extraction_method": "official_aws_evidence_with_public_linkedin_identity_and_about",
+    "limitations": [
+      "This is a representative-team research artifact and does not claim actual reporting-line or team membership.",
+      "The graph represents public professional claims and authored technical material, not independently verified proficiency.",
+      "Confidence measures source support for extraction, not seniority, performance, or hiring suitability.",
+      "No contact information, protected attributes, or private LinkedIn data was collected."
+    ]
+  },
+  "person": {
+    "id": "person_aws_engineer_d",
+    "name": "AWS Engineer D",
+    "knowledge_status": "claimed",
+    "headline": "Principal Gen AI Specialist Solutions Architect",
+    "affiliations": [
+      {"name":"Amazon Web Services","role":"Principal Gen AI Specialist Solutions Architect, Strategic Specialist team","status":"current_as_of_2026_aws_bio"}
+    ]
+  },
+  "nodes": [
+    {"id":"domain_agentic_ai","label":"Agentic AI","type":"domain","cluster":"agentic_ai_architecture","status":"claimed","confidence":1.0,"evidence_ids":["ev_role_bio","ev_linkedin_about"]},
+    {"id":"domain_foundation_model_science","label":"Foundation Model Science","type":"domain","cluster":"agentic_ai_architecture","status":"claimed","confidence":1.0,"evidence_ids":["ev_role_bio"]},
+    {"id":"skill_ai_ml_solution_architecture","label":"AI/ML Solution Architecture at Scale","type":"skill","cluster":"agentic_ai_architecture","status":"claimed","confidence":0.99,"evidence_ids":["ev_role_bio"]},
+    {"id":"domain_multi_agent_systems","label":"Multi-Agent Systems","type":"domain","cluster":"agent_interoperability","status":"claimed","confidence":1.0,"evidence_ids":["ev_a2a_overview","ev_linkedin_about"]},
+    {"id":"method_agent_to_agent_protocol","label":"Agent-to-Agent (A2A) Protocol","type":"method","cluster":"agent_interoperability","status":"claimed","confidence":1.0,"evidence_ids":["ev_a2a_overview"]},
+    {"id":"tool_amazon_bedrock_agentcore_runtime","label":"Amazon Bedrock AgentCore Runtime","type":"tool","cluster":"agent_interoperability","status":"claimed","confidence":1.0,"evidence_ids":["ev_a2a_runtime","ev_agentwatch_platform"]},
+    {"id":"method_dynamic_agent_discovery","label":"Dynamic Agent Discovery","type":"method","cluster":"agent_interoperability","status":"claimed","confidence":1.0,"evidence_ids":["ev_a2a_lifecycle"]},
+    {"id":"method_capability_based_routing","label":"Capability-Based Agent Routing","type":"method","cluster":"agent_interoperability","status":"claimed","confidence":1.0,"evidence_ids":["ev_a2a_lifecycle"]},
+    {"id":"method_agent_authentication_and_identity","label":"Agent Authentication and Identity","type":"method","cluster":"agent_interoperability","status":"claimed","confidence":0.99,"evidence_ids":["ev_a2a_runtime","ev_agentwatch_security"]},
+    {"id":"workflow_multi_agent_incident_response","label":"Multi-Agent Incident Response","type":"workflow","cluster":"agent_interoperability","status":"claimed","confidence":1.0,"evidence_ids":["ev_incident_architecture"]},
+    {"id":"domain_ambient_agents","label":"Ambient Agents","type":"domain","cluster":"agentic_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_agentwatch_goal"]},
+    {"id":"workflow_agentwatch","label":"AgentWatch Proactive Monitoring","type":"workflow","cluster":"agentic_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_agentwatch_goal"]},
+    {"id":"skill_aws_infrastructure_monitoring","label":"AWS Infrastructure Monitoring","type":"skill","cluster":"agentic_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_agentwatch_goal","ev_monitoring_data"]},
+    {"id":"tool_amazon_cloudwatch","label":"Amazon CloudWatch","type":"tool","cluster":"agentic_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_monitoring_data"]},
+    {"id":"method_cross_account_monitoring","label":"Cross-Account Monitoring","type":"method","cluster":"agentic_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_monitoring_data"]},
+    {"id":"tool_amazon_eventbridge","label":"Amazon EventBridge","type":"tool","cluster":"production_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_scheduled_architecture"]},
+    {"id":"tool_aws_lambda","label":"AWS Lambda","type":"tool","cluster":"production_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_scheduled_architecture"]},
+    {"id":"tool_amazon_cognito","label":"Amazon Cognito","type":"tool","cluster":"production_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_scheduled_architecture","ev_agentwatch_security"]},
+    {"id":"tool_slack","label":"Slack","type":"tool","cluster":"production_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_slack_interface"]},
+    {"id":"method_human_in_the_loop","label":"Human-in-the-Loop Control","type":"method","cluster":"responsible_agent_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_hitl_patterns"]},
+    {"id":"method_notify_question_review_patterns","label":"Notify, Question, and Review Patterns","type":"method","cluster":"responsible_agent_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_hitl_patterns"]},
+    {"id":"skill_agent_operational_safety","label":"Agent Operational Safety","type":"skill","cluster":"responsible_agent_operations","status":"claimed","confidence":0.99,"evidence_ids":["ev_hitl_patterns","ev_agentwatch_security"]},
+    {"id":"skill_agent_observability","label":"Agent Observability and Auditability","type":"skill","cluster":"responsible_agent_operations","status":"claimed","confidence":0.99,"evidence_ids":["ev_agentwatch_security","ev_incident_architecture"]}
+  ],
+  "edges": [
+    {"source":"domain_foundation_model_science","target":"skill_ai_ml_solution_architecture","type":"INFORMS","confidence":0.98,"evidence_ids":["ev_role_bio"]},
+    {"source":"domain_agentic_ai","target":"skill_ai_ml_solution_architecture","type":"APPLIED_TO","confidence":0.98,"evidence_ids":["ev_role_bio"]},
+    {"source":"method_agent_to_agent_protocol","target":"domain_multi_agent_systems","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_a2a_overview"]},
+    {"source":"tool_amazon_bedrock_agentcore_runtime","target":"method_agent_to_agent_protocol","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_a2a_runtime"]},
+    {"source":"method_dynamic_agent_discovery","target":"method_capability_based_routing","type":"PRECEDES","confidence":1.0,"evidence_ids":["ev_a2a_lifecycle"]},
+    {"source":"method_agent_authentication_and_identity","target":"method_agent_to_agent_protocol","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_a2a_runtime"]},
+    {"source":"method_agent_to_agent_protocol","target":"workflow_multi_agent_incident_response","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_incident_architecture"]},
+    {"source":"method_capability_based_routing","target":"workflow_multi_agent_incident_response","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_incident_architecture"]},
+    {"source":"workflow_agentwatch","target":"domain_ambient_agents","type":"SPECIALIZES_IN","confidence":1.0,"evidence_ids":["ev_agentwatch_goal"]},
+    {"source":"tool_amazon_bedrock_agentcore_runtime","target":"workflow_agentwatch","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_agentwatch_platform"]},
+    {"source":"workflow_agentwatch","target":"skill_aws_infrastructure_monitoring","type":"AUTOMATES","confidence":1.0,"evidence_ids":["ev_agentwatch_goal"]},
+    {"source":"tool_amazon_cloudwatch","target":"skill_aws_infrastructure_monitoring","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_monitoring_data"]},
+    {"source":"method_cross_account_monitoring","target":"skill_aws_infrastructure_monitoring","type":"SUPPORTS","confidence":1.0,"evidence_ids":["ev_monitoring_data"]},
+    {"source":"tool_amazon_eventbridge","target":"tool_aws_lambda","type":"PRECEDES","confidence":1.0,"evidence_ids":["ev_scheduled_architecture"]},
+    {"source":"tool_aws_lambda","target":"tool_amazon_bedrock_agentcore_runtime","type":"PRECEDES","confidence":1.0,"evidence_ids":["ev_scheduled_architecture"]},
+    {"source":"tool_amazon_cognito","target":"method_agent_authentication_and_identity","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_scheduled_architecture","ev_agentwatch_security"]},
+    {"source":"workflow_agentwatch","target":"tool_slack","type":"CONTRIBUTES_TO","confidence":0.99,"evidence_ids":["ev_slack_interface"]},
+    {"source":"method_notify_question_review_patterns","target":"method_human_in_the_loop","type":"SPECIALIZES_IN","confidence":1.0,"evidence_ids":["ev_hitl_patterns"]},
+    {"source":"method_human_in_the_loop","target":"skill_agent_operational_safety","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_hitl_patterns"]},
+    {"source":"method_agent_authentication_and_identity","target":"skill_agent_operational_safety","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_agentwatch_security"]},
+    {"source":"skill_agent_observability","target":"skill_agent_operational_safety","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_agentwatch_security"]},
+    {"source":"workflow_multi_agent_incident_response","target":"skill_agent_observability","type":"CONTRIBUTES_TO","confidence":0.98,"evidence_ids":["ev_incident_architecture"]}
+  ],
+  "evidence": [
+    {"id":"ev_role_bio","section":"official_author_bio","excerpt":"AWS identifies Sriharsha M S as a Principal Gen AI Specialist Solutions Architect in the Strategic Specialist team who advises on foundation model science and agentic AI applications at scale."},
+    {"id":"ev_linkedin_about","section":"public_linkedin_about","excerpt":"The public profile describes using multi-agents and agentic harnesses in architecture work."},
+    {"id":"ev_a2a_overview","section":"official_aws_blog_post_a2a","excerpt":"The coauthored AWS post explains A2A support for peer discovery, capability sharing, and coordinated cross-platform action among agents."},
+    {"id":"ev_a2a_runtime","section":"official_aws_blog_post_a2a","excerpt":"AgentCore Runtime provides a secure serverless agent environment with framework/model flexibility, session isolation, built-in authentication, and A2A support."},
+    {"id":"ev_a2a_lifecycle","section":"official_aws_blog_post_a2a","excerpt":"Agent cards advertise capabilities and authentication requirements so orchestrators can discover specialized agents and route tasks based on capabilities."},
+    {"id":"ev_incident_architecture","section":"official_aws_blog_post_a2a","excerpt":"The incident-response example uses a hub-and-spoke system with host, monitoring, and operations agents, plus memory, identity, gateway, and observability capabilities."},
+    {"id":"ev_agentwatch_goal","section":"official_aws_blog_post_agentwatch","excerpt":"AgentWatch is an ambient agent that continuously observes AWS infrastructure and surfaces actionable insights while involving humans when judgment is needed."},
+    {"id":"ev_agentwatch_platform","section":"official_aws_blog_post_agentwatch","excerpt":"AgentWatch runs an Amazon Bedrock model on AgentCore Runtime, a secure serverless environment designed for deploying agents at scale."},
+    {"id":"ev_monitoring_data","section":"official_aws_blog_post_agentwatch","excerpt":"AgentWatch analyzes CloudWatch dashboards, logs, alarms, and metrics, including cross-account infrastructure monitoring."},
+    {"id":"ev_scheduled_architecture","section":"official_aws_blog_post_agentwatch","excerpt":"EventBridge invokes Lambda on a schedule; Lambda authenticates with Cognito and calls AgentCore Runtime with the monitoring prompt."},
+    {"id":"ev_slack_interface","section":"official_aws_blog_post_agentwatch","excerpt":"The agent posts monitoring reports to Slack and supports on-demand natural-language infrastructure questions."},
+    {"id":"ev_hitl_patterns","section":"official_aws_blog_post_agentwatch","excerpt":"AgentWatch applies notify, question, and review human-in-the-loop patterns so impactful actions can require clarification or approval."},
+    {"id":"ev_agentwatch_security","section":"official_aws_blog_post_agentwatch","excerpt":"The design combines OAuth with Cognito, IAM role assumption, AgentCore security, session-aware memory, logging, and audit trails."}
+  ],
+  "summary": {
+    "primary_clusters": [
+      {"name":"Agentic AI Architecture","node_ids":["domain_agentic_ai","domain_foundation_model_science","skill_ai_ml_solution_architecture"]},
+      {"name":"Agent Interoperability","node_ids":["domain_multi_agent_systems","method_agent_to_agent_protocol","tool_amazon_bedrock_agentcore_runtime","method_dynamic_agent_discovery","method_capability_based_routing","method_agent_authentication_and_identity","workflow_multi_agent_incident_response"]},
+      {"name":"Agentic Operations","node_ids":["domain_ambient_agents","workflow_agentwatch","skill_aws_infrastructure_monitoring","tool_amazon_cloudwatch","method_cross_account_monitoring"]},
+      {"name":"Production Operations","node_ids":["tool_amazon_eventbridge","tool_aws_lambda","tool_amazon_cognito","tool_slack"]},
+      {"name":"Responsible Agent Operations","node_ids":["method_human_in_the_loop","method_notify_question_review_patterns","skill_agent_operational_safety","skill_agent_observability"]}
+    ],
+    "node_count": 23,
+    "edge_count": 22,
+    "default_verification_status": "claimed"
+  }
+}

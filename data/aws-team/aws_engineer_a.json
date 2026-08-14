@@ -1,0 +1,160 @@
+{
+  "schema_version": "0.1.0",
+  "generated_at": "2026-08-14T20:45:34Z",
+  "source": {
+    "type": "public_professional_profile_and_official_aws_sources",
+    "real_name": "Dani Mitchell",
+    "linkedin_profile_url": "https://www.linkedin.com/in/aidanimitchell/",
+    "official_urls": [
+      "https://aws.amazon.com/blogs/machine-learning/author/buzecd/",
+      "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/",
+      "https://aws.amazon.com/blogs/machine-learning/introducing-multimodal-retrieval-for-amazon-bedrock-knowledge-bases/",
+      "https://aws.amazon.com/blogs/machine-learning/access-control-for-vector-stores-using-metadata-filtering-with-knowledge-bases-for-amazon-bedrock/",
+      "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/",
+      "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-prompt-management-is-now-available-in-ga/"
+    ],
+    "sections_used": [
+      "official_aws_author_bio",
+      "official_aws_technical_articles",
+      "public_linkedin_profile_url"
+    ],
+    "extraction_method": "official_aws_source_read_with_evidence_backed_semantic_normalization",
+    "limitations": [
+      "This is a representative-team artifact and does not claim to reproduce an actual AWS reporting line or team roster.",
+      "The display identity is anonymized; the real name and source URLs are retained only in source metadata for auditability.",
+      "Technical concepts are derived from official AWS author bios and co-authored technical articles, not a complete LinkedIn profile export.",
+      "Every node remains claimed knowledge; article authorship and extraction confidence do not establish individual proficiency.",
+      "No photos, contact details, protected attributes, or sensitive personal information are included."
+    ]
+  },
+  "person": {
+    "id": "person_aws_engineer_a",
+    "name": "AWS Engineer A",
+    "headline": "Sr GenAI Specialist Solutions Architect; SA lead for Amazon Bedrock Knowledge Bases",
+    "affiliations": [
+      {
+        "name": "Amazon Web Services",
+        "relationship": "current_employment",
+        "period": "Current as of official AWS author bio accessed 2026-08-14"
+      }
+    ],
+    "knowledge_status": "claimed"
+  },
+  "nodes": [
+    {"id":"domain_generative_ai","label":"Generative AI","type":"domain","cluster":"enterprise_genai","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_role"]},
+    {"id":"skill_enterprise_genai_solution_design","label":"Enterprise Generative AI Solution Design","type":"skill","cluster":"enterprise_genai","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_role"]},
+    {"id":"skill_production_genai_deployment","label":"Production-Ready Generative AI Deployment","type":"skill","cluster":"enterprise_genai","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_role"]},
+    {"id":"tool_amazon_bedrock","label":"Amazon Bedrock","type":"tool","cluster":"enterprise_genai","status":"claimed","confidence":1.0,"evidence_ids":["ev_a_role"]},
+    {"id":"tool_anthropic_models","label":"Anthropic Models and Capabilities","type":"tool","cluster":"enterprise_genai","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_role"]},
+    {"id":"tool_amazon_bedrock_knowledge_bases","label":"Amazon Bedrock Knowledge Bases","type":"tool","cluster":"enterprise_retrieval","status":"claimed","confidence":1.0,"evidence_ids":["ev_a_role","ev_a_rag_pipeline"]},
+    {"id":"method_retrieval_augmented_generation","label":"Retrieval-Augmented Generation","type":"method","cluster":"enterprise_retrieval","status":"claimed","confidence":1.0,"evidence_ids":["ev_a_rag_pipeline","ev_a_metadata_security"]},
+    {"id":"workflow_managed_rag_pipeline","label":"Managed RAG Pipeline","type":"workflow","cluster":"enterprise_retrieval","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_rag_pipeline"]},
+    {"id":"workflow_managed_enterprise_search","label":"Managed Enterprise Search","type":"workflow","cluster":"enterprise_retrieval","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_managed_search"]},
+    {"id":"method_agentic_retrieval","label":"Agentic Retrieval","type":"method","cluster":"enterprise_retrieval","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"id":"skill_document_access_control","label":"Document-Level Access Control","type":"skill","cluster":"retrieval_security","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_managed_search","ev_a_metadata_security"]},
+    {"id":"method_real_time_acl_checks","label":"Real-Time ACL Checks","type":"method","cluster":"retrieval_security","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"id":"method_metadata_filtering","label":"Metadata Filtering","type":"method","cluster":"retrieval_security","status":"claimed","confidence":1.0,"evidence_ids":["ev_a_metadata_security"]},
+    {"id":"skill_data_privacy_and_security","label":"RAG Data Privacy and Security","type":"skill","cluster":"retrieval_security","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_metadata_security"]},
+    {"id":"tool_amazon_cloudwatch","label":"Amazon CloudWatch","type":"tool","cluster":"retrieval_security","status":"claimed","confidence":0.96,"evidence_ids":["ev_a_managed_search"]},
+    {"id":"tool_amazon_bedrock_agentcore_gateway","label":"Amazon Bedrock AgentCore Gateway","type":"tool","cluster":"agent_integration","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"id":"method_model_context_protocol","label":"Model Context Protocol","type":"method","cluster":"agent_integration","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"id":"workflow_intelligent_event_agent","label":"Production-Ready Intelligent Event Agent","type":"workflow","cluster":"agent_integration","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_event_agents"]},
+    {"id":"tool_agentcore_memory","label":"Amazon Bedrock AgentCore Memory","type":"tool","cluster":"agent_integration","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"id":"tool_agentcore_identity","label":"Amazon Bedrock AgentCore Identity","type":"tool","cluster":"agent_integration","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"id":"tool_agentcore_runtime","label":"Amazon Bedrock AgentCore Runtime","type":"tool","cluster":"agent_integration","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"id":"method_multimodal_retrieval","label":"Multimodal Retrieval","type":"method","cluster":"multimodal_rag","status":"claimed","confidence":1.0,"evidence_ids":["ev_a_multimodal"]},
+    {"id":"workflow_multimodal_rag","label":"Multimodal RAG Workflow","type":"workflow","cluster":"multimodal_rag","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_multimodal","ev_a_rag_pipeline"]},
+    {"id":"method_multimodal_embeddings","label":"Multimodal Embeddings","type":"method","cluster":"multimodal_rag","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_multimodal"]},
+    {"id":"tool_amazon_nova_multimodal_embeddings","label":"Amazon Nova Multimodal Embeddings","type":"tool","cluster":"multimodal_rag","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_multimodal"]},
+    {"id":"tool_amazon_bedrock_data_automation","label":"Amazon Bedrock Data Automation","type":"tool","cluster":"multimodal_rag","status":"claimed","confidence":0.98,"evidence_ids":["ev_a_multimodal"]},
+    {"id":"tool_amazon_bedrock_prompt_management","label":"Amazon Bedrock Prompt Management","type":"tool","cluster":"prompt_operations","status":"claimed","confidence":1.0,"evidence_ids":["ev_a_prompt_management"]},
+    {"id":"skill_prompt_lifecycle_management","label":"Prompt Creation, Evaluation, Versioning, and Sharing","type":"skill","cluster":"prompt_operations","status":"claimed","confidence":0.99,"evidence_ids":["ev_a_prompt_management"]}
+  ],
+  "edges": [
+    {"source":"skill_enterprise_genai_solution_design","target":"domain_generative_ai","type":"APPLIED_TO","confidence":0.99,"evidence_ids":["ev_a_role"]},
+    {"source":"tool_amazon_bedrock","target":"skill_enterprise_genai_solution_design","type":"USED_FOR","confidence":0.99,"evidence_ids":["ev_a_role"]},
+    {"source":"tool_anthropic_models","target":"skill_enterprise_genai_solution_design","type":"USED_FOR","confidence":0.98,"evidence_ids":["ev_a_role"]},
+    {"source":"skill_enterprise_genai_solution_design","target":"skill_production_genai_deployment","type":"CONTRIBUTES_TO","confidence":0.98,"evidence_ids":["ev_a_role"]},
+    {"source":"tool_amazon_bedrock_knowledge_bases","target":"method_retrieval_augmented_generation","type":"USED_FOR","confidence":1.0,"evidence_ids":["ev_a_rag_pipeline"]},
+    {"source":"workflow_managed_rag_pipeline","target":"method_retrieval_augmented_generation","type":"BASED_ON","confidence":1.0,"evidence_ids":["ev_a_rag_pipeline"]},
+    {"source":"tool_amazon_bedrock_knowledge_bases","target":"workflow_managed_rag_pipeline","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_a_rag_pipeline"]},
+    {"source":"tool_amazon_bedrock_knowledge_bases","target":"workflow_managed_enterprise_search","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"method_agentic_retrieval","target":"workflow_managed_enterprise_search","type":"ENABLES","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"method_real_time_acl_checks","target":"skill_document_access_control","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"skill_document_access_control","target":"workflow_managed_enterprise_search","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"tool_amazon_cloudwatch","target":"workflow_managed_enterprise_search","type":"SUPPORTS","confidence":0.96,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"tool_amazon_bedrock_agentcore_gateway","target":"workflow_managed_enterprise_search","type":"ENABLES","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"method_model_context_protocol","target":"tool_amazon_bedrock_agentcore_gateway","type":"USED_FOR","confidence":0.98,"evidence_ids":["ev_a_managed_search"]},
+    {"source":"method_metadata_filtering","target":"skill_document_access_control","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_a_metadata_security"]},
+    {"source":"skill_document_access_control","target":"skill_data_privacy_and_security","type":"CONTRIBUTES_TO","confidence":0.98,"evidence_ids":["ev_a_metadata_security"]},
+    {"source":"method_metadata_filtering","target":"method_retrieval_augmented_generation","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_a_metadata_security"]},
+    {"source":"tool_agentcore_memory","target":"workflow_intelligent_event_agent","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"source":"tool_agentcore_identity","target":"workflow_intelligent_event_agent","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"source":"tool_agentcore_runtime","target":"workflow_intelligent_event_agent","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"source":"tool_amazon_bedrock_knowledge_bases","target":"workflow_intelligent_event_agent","type":"SUPPORTS","confidence":0.99,"evidence_ids":["ev_a_event_agents"]},
+    {"source":"method_multimodal_retrieval","target":"workflow_multimodal_rag","type":"ENABLES","confidence":1.0,"evidence_ids":["ev_a_multimodal"]},
+    {"source":"method_multimodal_embeddings","target":"method_multimodal_retrieval","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_a_multimodal"]},
+    {"source":"tool_amazon_nova_multimodal_embeddings","target":"method_multimodal_embeddings","type":"USED_FOR","confidence":0.99,"evidence_ids":["ev_a_multimodal"]},
+    {"source":"tool_amazon_bedrock_data_automation","target":"workflow_multimodal_rag","type":"SUPPORTS","confidence":0.98,"evidence_ids":["ev_a_multimodal"]},
+    {"source":"workflow_multimodal_rag","target":"workflow_managed_rag_pipeline","type":"SPECIALIZES_IN","confidence":0.98,"evidence_ids":["ev_a_multimodal","ev_a_rag_pipeline"]},
+    {"source":"tool_amazon_bedrock_prompt_management","target":"skill_prompt_lifecycle_management","type":"ENABLES","confidence":0.99,"evidence_ids":["ev_a_prompt_management"]},
+    {"source":"skill_prompt_lifecycle_management","target":"skill_production_genai_deployment","type":"SUPPORTS","confidence":0.97,"evidence_ids":["ev_a_prompt_management"]}
+  ],
+  "evidence": [
+    {
+      "id": "ev_a_role",
+      "section": "official_aws_author_bio",
+      "excerpt": "AWS identifies Dani Mitchell as a Sr GenAI Specialist Solutions Architect and the SA lead for Amazon Bedrock Knowledge Bases, helping enterprises design and deploy scalable, production-ready generative AI applications with Amazon Bedrock and Anthropic models.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/"
+    },
+    {
+      "id": "ev_a_managed_search",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored managed knowledge base article describes production enterprise search with managed parsing, storage, indexing and retrieval, document access control, real-time ACL checks, CloudWatch observability, agentic retrieval, and AgentCore Gateway integration that exposes knowledge bases to MCP-compatible agents.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/build-enterprise-search-for-agents-with-amazon-bedrock-managed-knowledge-base/"
+    },
+    {
+      "id": "ev_a_multimodal",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored multimodal retrieval article covers RAG across text, images, audio, and video; native multimodal embeddings with Amazon Nova; and Bedrock Data Automation for generating rich text descriptions and transcripts.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-multimodal-retrieval-for-amazon-bedrock-knowledge-bases/"
+    },
+    {
+      "id": "ev_a_rag_pipeline",
+      "section": "official_aws_technical_article",
+      "excerpt": "The article describes Amazon Bedrock Knowledge Bases automating a RAG workflow that ingests content, parses and chunks it, creates vector embeddings, stores them in a vector database, retrieves relevant vectors, and augments the model prompt.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/introducing-multimodal-retrieval-for-amazon-bedrock-knowledge-bases/"
+    },
+    {
+      "id": "ev_a_metadata_security",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored access-control article explains metadata filtering for relevant RAG context and for access control based on roles, departments, or data sensitivity, supporting privacy, security, governance, and reduced irrelevant retrieval noise.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/access-control-for-vector-stores-using-metadata-filtering-with-knowledge-bases-for-amazon-bedrock/"
+    },
+    {
+      "id": "ev_a_event_agents",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored event-agent article combines AgentCore Memory for context and preferences, AgentCore Identity for authentication, AgentCore Runtime for serverless scaling and session isolation, and Bedrock Knowledge Bases for managed RAG and event retrieval.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/building-intelligent-event-agents-using-amazon-bedrock-agentcore-and-amazon-bedrock-knowledge-bases/"
+    },
+    {
+      "id": "ev_a_prompt_management",
+      "section": "official_aws_technical_article",
+      "excerpt": "The co-authored Amazon Bedrock Prompt Management announcement describes creating, evaluating, versioning, and sharing prompts for generative AI applications.",
+      "source_url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-prompt-management-is-now-available-in-ga/"
+    }
+  ],
+  "summary": {
+    "primary_clusters": [
+      {"name":"Enterprise Generative AI","node_ids":["domain_generative_ai","skill_enterprise_genai_solution_design","skill_production_genai_deployment","tool_amazon_bedrock","tool_anthropic_models"]},
+      {"name":"Enterprise Retrieval","node_ids":["tool_amazon_bedrock_knowledge_bases","method_retrieval_augmented_generation","workflow_managed_rag_pipeline","workflow_managed_enterprise_search","method_agentic_retrieval"]},
+      {"name":"Retrieval Security","node_ids":["skill_document_access_control","method_real_time_acl_checks","method_metadata_filtering","skill_data_privacy_and_security","tool_amazon_cloudwatch"]},
+      {"name":"Agent Integration","node_ids":["tool_amazon_bedrock_agentcore_gateway","method_model_context_protocol","workflow_intelligent_event_agent","tool_agentcore_memory","tool_agentcore_identity","tool_agentcore_runtime"]},
+      {"name":"Multimodal RAG","node_ids":["method_multimodal_retrieval","workflow_multimodal_rag","method_multimodal_embeddings","tool_amazon_nova_multimodal_embeddings","tool_amazon_bedrock_data_automation"]},
+      {"name":"Prompt Operations","node_ids":["tool_amazon_bedrock_prompt_management","skill_prompt_lifecycle_management"]}
+    ],
+    "node_count": 28,
+    "edge_count": 28,
+    "default_verification_status": "claimed"
+  }
+}
